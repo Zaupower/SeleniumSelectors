@@ -21,7 +21,28 @@
 8. Find element (Airport) with text London Ontario, Canada
 	
 	.//div[a[contains(text(), 'London')] and a[contains(text(), 'Ontario, ')] and a[contains(text(), 'Canada')]]
+
+9. Find element that describes airport next after London Ontario, Canada
 	
+
+11. Find element for 3 weekdays just under the header with the text "weather for today".
+	$x(".//div[contains(@class, 'weathertabs day-1')]")
+
+12. Find element for currently selected weekday
+	$x(".//a[contains(@class, 'weathertab weathertab-block tooltip')]")
+
+13. Find both temperature for currently selected weekday
+	//Celsius
+	$x(".//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_c')]")
+	//Farheit
+	$x(".//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_f')]")
+	//All
+	.//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_')]
+	
+14. Find the same elements, but using CSS where possible
+
+
+
 Tips
 For the div element with an id attribute of hero //div[@id='hero'], these XPath expression will select elements as follows:
 
