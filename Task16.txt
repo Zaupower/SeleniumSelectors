@@ -1,17 +1,27 @@
 1. Find all divs on the page
 	$x(".//div")
+
 2. Find all divs with h2
 	$x(".//div/h2")
+
 3. Find all items with news titles(the block under list of cities)(х items)
 	$x(".//div[contains(@class, 'feed-scroll')]/child::node()")
+
 4. Find the last span for Cities
 	//Use '//' to get all descendents and '/' to get all childs
 
 	$x(".//div[contains(@class, 'cities-popular')]//span[last()]")
 
+5. Get all titles from items from #3
+	$x()
 
+6. Find all top menu link
+	$(.//div[contains(@class, 'header-item header-top logo-special')]//@href)
 
-
+8. Find element (Airport) with text London Ontario, Canada
+	
+	.//div[a[contains(text(), 'London')] and a[contains(text(), 'Ontario, ')] and a[contains(text(), 'Canada')]]
+	
 Tips
 For the div element with an id attribute of hero //div[@id='hero'], these XPath expression will select elements as follows:
 
@@ -19,4 +29,6 @@ For the div element with an id attribute of hero //div[@id='hero'], these XPath 
     //div[@id='hero']/img will select all of its children img elements.
     //div[@id='hero']//* will select all of its descendent elements.
     //div[@id='hero']//img will select all of its descendent img elements.
+
+ 
 
