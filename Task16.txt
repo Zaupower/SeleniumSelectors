@@ -1,0 +1,8 @@
+1. Find all divs on the page
+	$x(".//div")
+2. Find all divs with h2
+	$x(".//div/h2")
+3. Find all items with news titles(the block under list of cities)(х items)
+	$x(".//div[contains(@class, 'feed-scroll')]/child::node()")
+4. Find the last span for Cities
+	$x(".//div[contains(@class, 'cities-popular')]//span[last()]")
