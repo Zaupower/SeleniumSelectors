@@ -5,4 +5,5 @@
 3. Find all items with news titles(the block under list of cities)(х items)
 	$x(".//div[contains(@class, 'feed-scroll')]/child::node()")
 4. Find the last span for Cities
+	//Use '//' to get all descendents and '/' to get all childs
 	$x(".//div[contains(@class, 'cities-popular')]//span[last()]")
