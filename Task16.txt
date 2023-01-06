@@ -6,4 +6,17 @@
 	$x(".//div[contains(@class, 'feed-scroll')]/child::node()")
 4. Find the last span for Cities
 	//Use '//' to get all descendents and '/' to get all childs
+
 	$x(".//div[contains(@class, 'cities-popular')]//span[last()]")
+
+
+
+
+Tips
+For the div element with an id attribute of hero //div[@id='hero'], these XPath expression will select elements as follows:
+
+    //div[@id='hero']/* will select all of its children elements.
+    //div[@id='hero']/img will select all of its children img elements.
+    //div[@id='hero']//* will select all of its descendent elements.
+    //div[@id='hero']//img will select all of its descendent img elements.
+
