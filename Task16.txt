@@ -13,8 +13,8 @@
 	$x(".//div[contains(@class, 'cities-popular')]//span[last()]")
 
 5. Get all titles from items from #3
-	$x()
-
+	$x(.//div[contains(@class, 'feed-scroll')]/child::node()//div[contains(@class, 'text-title')])
+	
 6. Find all top menu link
 	$(.//div[contains(@class, 'header-item header-top logo-special')]//@href)
 
@@ -22,8 +22,8 @@
 	
 	.//div[a[contains(text(), 'London')] and a[contains(text(), 'Ontario, ')] and a[contains(text(), 'Canada')]]
 
-9. Find element that describes airport next after London Ontario, Canada
-	
+	9. Find element that describes airport next after London Ontario, Canada
+	Falta
 
 11. Find element for 3 weekdays just under the header with the text "weather for today".
 	$x(".//div[contains(@class, 'weathertabs day-1')]")
@@ -38,8 +38,9 @@
 	$x(".//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_f')]")
 	//All
 	.//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_')]
-	
-14. Find the same elements, but using CSS where possible
+
+	14. Find the same elements, but using CSS where possible
+
 
 
 
