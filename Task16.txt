@@ -14,7 +14,7 @@
 
 5. Get all titles from items from #3
 	$x(.//div[contains(@class, 'feed-scroll')]/child::node()//div[contains(@class, 'text-title')])
-	
+
 6. Find all top menu link
 	$(.//div[contains(@class, 'header-item header-top logo-special')]//@href)
 
@@ -39,8 +39,8 @@
 	//All
 	.//a[contains(@class, 'weathertab weathertab-block tooltip')]//span[contains(@class, 'unit unit_temperature_')]
 
-	14. Find the same elements, but using CSS where possible
-
+14. Find the same elements, but using CSS where possible
+	.weathertab.weathertab-block.tooltip span.unit
 
 
 
