@@ -19,11 +19,18 @@
 	$(.//div[contains(@class, 'header-item header-top logo-special')]//@href)
 
 8. Find element (Airport) with text London Ontario, Canada
-	
+	TODO
 	.//div[a[contains(text(), 'London')] and a[contains(text(), 'Ontario, ')] and a[contains(text(), 'Canada')]]
 
-	9. Find element that describes airport next after London Ontario, Canada
-	Falta
+	parent
+	.//section//div[contains(@class, 'catalog-subtitle') and contains(., 'Airports ')]
+
+
+	//Important
+	.//section/section/*[self::div[contains(text(), 'Airports ')] or self::div[contains(text(), 'London ')] ]
+
+9. Find element that describes airport next after London Ontario, Canada
+	TODO
 
 11. Find element for 3 weekdays just under the header with the text "weather for today".
 	$x(".//div[contains(@class, 'weathertabs day-1')]")
